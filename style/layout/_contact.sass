@@ -1,0 +1,23 @@
+/*------------------------------------*\
+    聯絡方式
+/*------------------------------------*\
+
+.contact
+    width: 100%
+    background-color: $color-black
+    padding: 64px 0
+    +flexGrid(flex-start, center, column)
+
+    &-list-item
+        +flexGrid(center)
+        margin-top: 16px
+        +fontSize(24px, 36px, 500)
+        color: $color-white
+
+    &-link
+        text-align: center
+        text-decoration: none
+        color: $color-white
+        transition: .3s
+        &:hover
+            color: $color-lightRed

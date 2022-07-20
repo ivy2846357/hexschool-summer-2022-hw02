@@ -1,0 +1,28 @@
+/*------------------------------------*\
+    mixin
+/*------------------------------------*\
+    
+// 字體大小設定
+=fontSize($fz, $lh, $fw:400, $fs: italic)
+    font-size: $fz
+    line-height: $lh
+    font-weight: $fw
+    font-style: $fs
+
+// 寬高設定
+=size($w,$h:$w)
+    width: $w
+    height: $h
+
+//- flex 樣式設定（預設置中、橫向排列）
+=flexGrid($jc:center, $ai:center, $direction: row)
+    display: flex
+    flex-direction: $direction
+    justify-content: $jc
+    align-items: $ai
+
+//- 圖片 hover 效果
+.transform-hover
+    transition: .3s
+    &:hover
+        transform: translateY(-8px)

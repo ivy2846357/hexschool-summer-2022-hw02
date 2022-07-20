@@ -1,0 +1,46 @@
+/*------------------------------------*\
+    關於我
+/*------------------------------------*\
+
+.about
+
+    // 照片
+    &-photo
+        +size(384px)
+        margin: 40px 0 20px 0
+
+    // 個人資訊
+    &-info
+        &-list
+            +flexGrid(flex-start,center,column)
+            padding-bottom: 26px
+            border-bottom: 1px solid $color-black
+
+        &-item
+            +fontSize(24px, 42px, 700)
+            margin-bottom: 4px
+            text-align: center
+            &:last-child
+                margin-bottom: 0
+
+    // 職涯介紹
+    &-experience
+        &-list
+            +flexGrid(flex-start,center,column)
+            margin-top: 26px
+
+        &-item
+            +fontSize(24px, 42px, 700)
+            margin-bottom: 28px
+            position: relative
+            &:last-child
+                margin-bottom: 0
+            &::before
+                content: ''
+                +size(22px)
+                border-radius: 50%
+                background-color: $color-red
+                position: absolute
+                top: 50%
+                left: -38px
+                transform: translateY(-50%)

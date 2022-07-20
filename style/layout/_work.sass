@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    作品
+/*------------------------------------*\
+
+.work
+    >p
+        margin: 16px 0
+
+    &-list
+        width: 1200px
+        margin: 40px 0 96px 0
+        +flexGrid(center)
+        flex-wrap: wrap
+
+        &-item
+            margin-right: 24px
+            transition: .3s
+
+            &:nth-child(3),
+            &:nth-child(5),
+            &:nth-child(8)
+                margin-right: 0
+            @extend .transform-hover
+
+            // &:hover
+            //     >img
+            //         @extend .transform-hover
+
+        &-word
+            +fontSize(20px, 42px, 500, normal)
+            text-align: center
+            margin: 16px 0 48px 0
