@@ -14,9 +14,8 @@
 
 // 文字簡介
 .person
-    
+     
     &-info
-        +flexGrid(center,flex-start,column)
 
         &-word
             +fontSize(24px, 42px, 700)
@@ -30,9 +29,9 @@
             margin-bottom: 40px
 
     &-social
-        +flexGrid(center)
 
         &-link
+            display: inline-block
             margin-right: 16px
             @extend .transform-hover
             &:last-child
