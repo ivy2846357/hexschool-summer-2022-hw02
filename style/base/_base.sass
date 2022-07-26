@@ -9,22 +9,19 @@ $color-gray: #707070
 $color-red: #891818
 $color-lightRed: #c64343
 
-// 架構
-.container
-    +flexGrid(flex-start, center, column)
-
 // 共用標題、文字樣式
 .section
     padding: 56px 0
-    +flexGrid(flex-start,center,column)
 
     &-title
         +fontSize(64px, 84px, 500)
+        text-align: center
         &.white
             color: $color-white
 
     &-subtitle
         +fontSize(24px, 42px, 500)
+        text-align: center
         margin: 16px 0
         &.white
             color: $color-white

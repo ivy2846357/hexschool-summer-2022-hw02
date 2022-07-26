@@ -4,14 +4,14 @@
 
 .brand
     background-color: $color-black
-    +size(100%,auto)
 
     &-list
-        width: 1200px
-        +flexGrid(center)
+        width: 1400px
+        +flexGrid(center,center)
         flex-wrap: wrap
-        margin: 68px 0 120px 0
+        margin: 68px auto 120px auto
 
         &-item
+            margin-right: 24px
             margin-bottom: 40px
             @extend .transform-hover

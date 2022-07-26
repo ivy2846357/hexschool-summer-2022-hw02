@@ -65,43 +65,15 @@ table {
 /*------------------------------------*\
  *  共用樣式設定 */
 /*------------------------------------*\ */
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .section {
   padding: 56px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .section-title {
   font-size: 64px;
   line-height: 84px;
   font-weight: 500;
   font-style: italic;
+  text-align: center;
 }
 .section-title.white {
   color: #fff;
@@ -111,6 +83,7 @@ table {
   line-height: 42px;
   font-weight: 500;
   font-style: italic;
+  text-align: center;
   margin: 16px 0;
 }
 .section-subtitle.white {
@@ -139,7 +112,7 @@ body {
  *  header（個人簡介） */
 /*------------------------------------*\ */
 .header {
-  width: 100vw;
+  width: 100%;
   height: 958px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -223,7 +196,8 @@ body {
 .about-photo {
   width: 384px;
   height: 384px;
-  margin: 40px 0 20px 0;
+  margin: 40px auto 20px auto;
+  display: block;
 }
 .about-info-list {
   display: -webkit-box;
@@ -233,12 +207,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 420px;
+  margin: 0 auto;
   padding-bottom: 26px;
   border-bottom: 1px solid #000;
 }
@@ -298,11 +274,9 @@ body {
 /*------------------------------------*\ */
 .brand {
   background-color: #000;
-  width: 100%;
-  height: auto;
 }
 .brand-list {
-  width: 1200px;
+  width: 1400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,9 +292,10 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 68px 0 120px 0;
+  margin: 68px auto 120px auto;
 }
 .brand-list-item {
+  margin-right: 24px;
   margin-bottom: 40px;
 }
 
@@ -332,7 +307,7 @@ body {
 }
 .work-list {
   width: 1200px;
-  margin: 40px 0 96px 0;
+  margin: 40px auto 96px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,19 +348,6 @@ body {
   width: 100%;
   background-color: #000;
   padding: 64px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .contact-list-item {
   display: -webkit-box;
